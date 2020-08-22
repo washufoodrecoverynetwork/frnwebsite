@@ -79,13 +79,13 @@ iframe {
 @media (min-width: 1130px) {
   #navbar-logo {
     width: 120px;
-    height: 120px;
+    height: 81px;
   }
 }
 @media (max-width: 1129px) {
   #navbar-logo {
     width: 80px;
-    height: 80px;
+    height: 61px;
   }
 }
 #navbarDropdown {
@@ -127,33 +127,11 @@ iframe {
 #homeDisplay #ourclientsDisplayBackground {
   filter: brightness(60%);
 }
-#homeDisplay .top-left {
-  left: 32px;
-}
-#homeDisplay .top-right {
-  right: 32px;
-}
-#homeDisplay .top-left, #homeDisplay .top-right {
+#homeDisplay .alert-container {
   position: absolute;
-  top: 32px;
-}
-@media (min-width: 1130px) {
-  #homeDisplay .top-left img, #homeDisplay .top-right img {
-    width: 300px;
-  }
-}
-@media (min-width: 590px) and (max-width: 1129px) {
-  #homeDisplay .top-left img, #homeDisplay .top-right img {
-    width: 150px;
-  }
-}
-@media (max-width: 589px) {
-  #homeDisplay .top-left img, #homeDisplay .top-right img {
-    width: 113px;
-  }
-  #homeDisplay .top-right {
-    right: 16px;
-  }
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #homeDisplay .centeredText {
   position: absolute;
@@ -168,10 +146,10 @@ iframe {
 }
 @media (max-width: 650px) {
   #homeDisplay h1 {
-    font-size: 18px;
+    font-size: 24px;
   }
   #homeDisplay h2 {
-    font-size: 12px;
+    font-size: 18px;
   }
 }
 
