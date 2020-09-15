@@ -142,11 +142,23 @@ iframe {
     filter: brightness(60%);
   }
 
-  .alert-container {
-    position: absolute;
-    top: 1%;
-    left: 50%;
-    transform: translateX(-50%);
+  @media (min-width: 498px) {
+    .alert-container {
+      position: absolute;
+      top: 1%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (max-width: 497px) {
+    .alert-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 15;
+      transform: translate(-50%, -50%);
+    }
   }
 
   .centeredText {

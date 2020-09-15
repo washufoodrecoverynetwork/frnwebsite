@@ -127,11 +127,22 @@ iframe {
 #homeDisplay #ourclientsDisplayBackground {
   filter: brightness(60%);
 }
-#homeDisplay .alert-container {
-  position: absolute;
-  top: 1%;
-  left: 50%;
-  transform: translateX(-50%);
+@media (min-width: 498px) {
+  #homeDisplay .alert-container {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 497px) {
+  #homeDisplay .alert-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 15;
+    transform: translate(-50%, -50%);
+  }
 }
 #homeDisplay .centeredText {
   position: absolute;
